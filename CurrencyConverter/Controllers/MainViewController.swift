@@ -16,6 +16,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         AppModel.sharedInstance.getCurrencies { (fail) in
+            if fail == nil {
+                self.currencyTableView.reloadData()
+            } else {
+               print(fail)
+            }
             
         }
     }
@@ -42,7 +47,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath)
         
         if let currencies = AppModel.sharedInstance.currencies {
-            cell.textLabel?.text = currencies[indexPath.row].getCurrencyConversion(200)
+            cell.textLabel?.text = currencies[indexPath.row].getCurrencyConversion(2)
         }
 
         return cell

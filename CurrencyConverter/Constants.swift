@@ -9,5 +9,5 @@
 import Foundation
 
 struct Constants {
-    static let useTestRepo = true;
+    static let useTestRepo = false;
 }
