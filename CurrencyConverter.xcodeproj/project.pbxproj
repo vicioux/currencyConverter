@@ -23,6 +23,9 @@
 		60CD67DC1D611C76003BE9CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD67DB1D611C76003BE9CA /* Constants.swift */; };
 		60CD67DE1D611F8C003BE9CA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD67DD1D611F8C003BE9CA /* AppModel.swift */; };
 		60CD67E11D6137C8003BE9CA /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD67E01D6137C8003BE9CA /* FormatHelper.swift */; };
+		60CD68071D634327003BE9CA /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD68061D634327003BE9CA /* String+Validations.swift */; };
+		60CD680A1D63435D003BE9CA /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CD68091D63435D003BE9CA /* CurrencyTableViewCell.xib */; };
+		60CD680D1D6343DB003BE9CA /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD680C1D6343DB003BE9CA /* CurrencyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		60CD67DB1D611C76003BE9CA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		60CD67DD1D611F8C003BE9CA /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppModel.swift; path = Models/AppModel.swift; sourceTree = "<group>"; };
 		60CD67E01D6137C8003BE9CA /* FormatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormatHelper.swift; path = Helpers/FormatHelper.swift; sourceTree = "<group>"; };
+		60CD68061D634327003BE9CA /* String+Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validations.swift"; path = "Helpers/String+Validations.swift"; sourceTree = "<group>"; };
+		60CD68091D63435D003BE9CA /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrencyTableViewCell.xib; path = Base.lproj/Cells/CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		60CD680C1D6343DB003BE9CA /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyTableViewCell.swift; path = Controllers/Cells/CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		B8D466536C3F12DF56118418 /* Pods_CurrencyConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -163,6 +169,7 @@
 		60CD67C41D61089F003BE9CA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				60CD680B1D63438B003BE9CA /* Cells */,
 				60CD67C71D6108D6003BE9CA /* MainViewController.swift */,
 			);
 			name = Controllers;
@@ -215,6 +222,7 @@
 		60CD67D21D61126C003BE9CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60CD68081D634351003BE9CA /* Cells */,
 				60CD67991D610718003BE9CA /* Main.storyboard */,
 			);
 			name = Views;
@@ -223,9 +231,26 @@
 		60CD67DF1D61377C003BE9CA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				60CD68061D634327003BE9CA /* String+Validations.swift */,
 				60CD67E01D6137C8003BE9CA /* FormatHelper.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		60CD68081D634351003BE9CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60CD68091D63435D003BE9CA /* CurrencyTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		60CD680B1D63438B003BE9CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60CD680C1D6343DB003BE9CA /* CurrencyTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		940258DCA9C9BD6E8F175909 /* Frameworks */ = {
@@ -352,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CD680A1D63435D003BE9CA /* CurrencyTableViewCell.xib in Resources */,
 				60CD67A01D610718003BE9CA /* LaunchScreen.storyboard in Resources */,
 				60CD679D1D610718003BE9CA /* Assets.xcassets in Resources */,
 				60CD679B1D610718003BE9CA /* Main.storyboard in Resources */,
@@ -427,9 +453,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CD68071D634327003BE9CA /* String+Validations.swift in Sources */,
 				60CD67E11D6137C8003BE9CA /* FormatHelper.swift in Sources */,
 				60CD67D81D611576003BE9CA /* TestCurrencyRepository.swift in Sources */,
 				60CD67D01D610D88003BE9CA /* ICurrencyRepository.swift in Sources */,
+				60CD680D1D6343DB003BE9CA /* CurrencyTableViewCell.swift in Sources */,
 				60CD67D61D6113EA003BE9CA /* Currency.swift in Sources */,
 				60CD67DA1D611BA4003BE9CA /* CurrencyRepository.swift in Sources */,
 				60CD67DE1D611F8C003BE9CA /* AppModel.swift in Sources */,
